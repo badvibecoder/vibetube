@@ -1,0 +1,4 @@
+// Windows resource script: embeds the icon into vibetube.exe so Explorer,
+// shortcuts and taskbar pinning show it. The window icon itself is set at
+// runtime from assets/icon*.png.
+1 ICON "assets/vibetube.ico"

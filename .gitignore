@@ -1,0 +1,8 @@
+# build output
+bin/
+
+# resource-compiler intermediate, regenerated on every build
+assets/*.res
+
+# scratch folders used by --selftest / --demo / manual testing
+_*/

@@ -63,8 +63,8 @@ ffmpeg -version
 ## Build from source
 
 ```bat
-build.bat         :: bin\vibetube.exe       shipped app, no console window
-build.bat dev     :: bin\vibetube-dev.exe   console build, for the dev flags
+build.bat         :: bin\vibetube.exe        shipped app, no console window
+build.bat dev     :: _dev\vibetube-dev.exe   console build, for the dev flags
 ```
 
 Both flavours embed the icon resource and are otherwise identical. The console
@@ -156,7 +156,7 @@ download.limit_mbit=16
 
 ## Dev flags
 
-Only on `bin\vibetube-dev.exe` (the console build), used by the project's own
+Only on `_dev\vibetube-dev.exe` (the console build), used by the project's own
 verification:
 
 ```bat
@@ -240,7 +240,8 @@ src/
 tools/
   make_icon.py         regenerates the icon set with Pillow
 
-bin/                   build output (not committed)
+bin/                   build output, production only (not committed)
+_dev/                  console dev build for testing (not committed)
 ```
 
 ---

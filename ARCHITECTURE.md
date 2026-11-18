@@ -510,7 +510,7 @@ store; add keys and the loader ignores unknown ones.
 | `src/winargs/` | command-line quoting + tests |
 | `assets/` | icon set, `.ico`, `.rc` |
 | `tools/make_icon.py` | regenerates the icon set |
-| `build.bat` | `bin\vibetube.exe`, or `bin\vibetube-dev.exe` with `dev` |
+| `build.bat` | `bin\vibetube.exe`, or `_dev\vibetube-dev.exe` with `dev` |
 
 ---
 
@@ -529,8 +529,8 @@ Before tagging a release:
 1. Close any running instance (the exe is locked while running).
 2. `build.bat` and `build.bat dev`, both exit 0.
 3. All three test packages pass.
-4. `bin\vibetube-dev.exe --selftest <url> <dir> --limit 16` downloads and renames.
-5. `bin\vibetube-dev.exe --shot docs\screenshot.png --fill <url>` renders cleanly.
+4. `_dev\vibetube-dev.exe --selftest <url> <dir> --limit 16` downloads and renames.
+5. `_dev\vibetube-dev.exe --shot docs\screenshot.png --fill <url>` renders cleanly.
 6. Window title reads `vibetube - vX.Y`; `ICON_BIG`/`ICON_SMALL` are non-zero.
 7. Copy `bin\vibetube.exe`, record size and SHA-256 in `RELEASE.md`.
 8. Bump `VERSION` in `src/main.odin` (it feeds the title bar only).
